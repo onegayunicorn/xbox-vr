@@ -1,0 +1,397 @@
+# API Level: valid: deviceApiLevel >= minApiLevel || deviceApiLevel < maxApiLevel
+
+mappingGroups:
+  # MicrosoftXboxControllerProductIdV2Map
+  - controllers:
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x02fd  # MicrosoftXboxControllerProductV2
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x0b0c  # MicrosoftXboxAdaptiveController
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x02d1  # MicrosoftXboxWiredController
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x0b05  # MicrosoftXboxEliteControllerDelphi
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x0b13  # MicrosoftXboxControllerMerlin
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x02ea  # MicrosoftXboxControllerV3
+        minApiLevel: 29    # Android10
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x02e3  # MicrosoftXboxWiredEliteV1Controller
+        minApiLevel: 29    # Android10
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      4: 5     # AKEYCODE_BACK: Back
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back    NOTE: Android 10
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      110: 10  # AKEYCODE_BUTTON_MODE: Guide
+      316: 10  # AKEYCODE_316: Guide    NOTE: Android 10
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+      23: 23   # AMOTION_EVENT_AXIS_BRAKE: LeftTrigger
+      22: 24   # AMOTION_EVENT_AXIS_GAS: RightTrigger
+
+  # MicrosoftXboxControllerProductIdV3Map
+  - controllers:
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x02ea  # MicrosoftXboxControllerV3
+        maxApiLevel: 29    # Android10
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x02e3  # MicrosoftXboxWiredEliteV1Controller
+        maxApiLevel: 29    # Android10
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x0b00  # MicrosoftXboxWiredEliteV2Controller
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x0b0a  # MicrosoftXboxWiredAdaptiveController
+      - vendorId: 0x045e   # Microsoft
+        productId: 0x02dd  # MicrosoftXboxWiredControllerV2
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      110: 10  # AKEYCODE_BUTTON_MODE: Guide
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      12: 19   # AMOTION_EVENT_AXIS_RX: RightStickX
+      13: 20   # AMOTION_EVENT_AXIS_RY: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+      11: 23   # AMOTION_EVENT_AXIS_Z: LeftTrigger
+      14: 24   # AMOTION_EVENT_AXIS_RZ: RightTrigger
+
+  # MotoZControllerProductIdMap
+  - controllers:
+      - vendorId: 0x0483   # MotoZ
+        productId: 0x5750  # MotoZController
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      3: 10    # AKEYCODE_HOME: Guide
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      104: 23  # AKEYCODE_BUTTON_L2: LeftTrigger
+      105: 24  # AKEYCODE_BUTTON_R2: RightTrigger
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+
+  # NintendoProControllerProductIdMap
+  - controllers:
+      - vendorId: 0x057E   # Nintendo
+        productId: 0x2009  # NintendoProController
+    buttonMappings:
+      105: 4   # AKEYCODE_BUTTON_R2: Start
+      104: 5   # AKEYCODE_BUTTON_L2: Back
+      109: 6   # AKEYCODE_BUTTON_SELECT: LeftStickButton
+      108: 7   # AKEYCODE_BUTTON_START: RightStickButton
+      100: 8   # AKEYCODE_BUTTON_Y: LeftShoulder
+      101: 9   # AKEYCODE_BUTTON_Z: RightShoulder
+      110: 10  # AKEYCODE_BUTTON_MODE: Guide
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      98: 14   # AKEYCODE_BUTTON_C: X
+      99: 15   # AKEYCODE_BUTTON_X: Y
+      102: 23  # AKEYCODE_BUTTON_L1: LeftTrigger
+      103: 24  # AKEYCODE_BUTTON_R1: RightTrigger
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+      # NOTE: {AKEYCODE_BUTTON_THUMBL,  Screenshot Button  }, No mapping for this extra button
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      12: 19   # AMOTION_EVENT_AXIS_RX: RightStickX
+      13: 20   # AMOTION_EVENT_AXIS_RY: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+
+  # MYGTProductIdMap
+  - controllers:
+      - vendorId: 0x4d59   # MYGT
+        productId: 0x4304  # MYGT
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      129: 10  # AKEYCODE_MEDIA_EJECT: Guide
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+      23: 23   # AMOTION_EVENT_AXIS_BRAKE: LeftTrigger
+      22: 24   # AMOTION_EVENT_AXIS_GAS: RightTrigger
+
+  # EightBitDoSN30ProductIdMap
+  - controllers:
+      - vendorId: 0x2DC8   # EightBitDo
+        productId: 0x6000  # EightBitDoSN30
+      - vendorId: 0x2DC8   # EightBitDo
+        productId: 0x6100  # EightBitDoSN30Wireless
+      - vendorId: 0x2DC8   # EightBitDo
+        productId: 0x2865  # EightBitDoN30Pro2Wireless
+      - vendorId: 0x2DC8   # EightBitDo
+        productId: 0x9015  # EightBitDoN30Pro2Wired
+      - vendorId: 0x2DC8   #EightBitDo
+        productId: 0x3820  #EightBitDoN30ProWireless
+      - vendorId: 0x2DC8   #EightBitDo
+        productId: 0x9001  #EightBitDoN30ProWired
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      3: 10    # AKEYCODE_HOME: Guide
+      98: 10   # AKEYCODE_BUTTON_C: Guide
+      97: 12   # AKEYCODE_BUTTON_B: A    NOTE: Face buttons mapped to retain positions relative to Xbox Controller
+      96: 13   # AKEYCODE_BUTTON_A: B
+      100: 14  # AKEYCODE_BUTTON_Y: X
+      99: 15   # AKEYCODE_BUTTON_X: Y
+      104: 23  # AKEYCODE_BUTTON_L2: LeftTrigger
+      105: 24  # AKEYCODE_BUTTON_R2: RightTrigger
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+
+  # EightBitDoSN30ProProductIdMap
+  - controllers:
+     - vendorId: 0x2DC8   # EightBitDo
+       productId: 0x6101  # EightBitDoSN30ProWireless
+     - vendorId: 0x2DC8   # EightBitDo
+       productId: 0x6001  # EightBitDoSN30ProWired
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      98: 10   # AKEYCODE_BUTTON_C: Guide
+      97: 12   # AKEYCODE_BUTTON_B: A    NOTE: Face buttons mapped to retain positions relative to Xbox Controller
+      96: 13   # AKEYCODE_BUTTON_A: B
+      100: 14  # AKEYCODE_BUTTON_Y: X
+      99: 15   # AKEYCODE_BUTTON_X: Y
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+      23: 23   # AMOTION_EVENT_AXIS_BRAKE: LeftTrigger
+      22: 24   # AMOTION_EVENT_AXIS_GAS: RightTrigger
+
+  # EightBitDoSN30ProPlusProductIdMap
+  - controllers:
+      - vendorId: 0x2DC8   # EightBitDo
+        productId: 0x6102  # EightBitDoSN30ProPlus
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      98: 10   # AKEYCODE_BUTTON_C: Guide
+      97: 12   # AKEYCODE_BUTTON_B: A    NOTE: Face buttons mapped to retain positions relative to Xbox Controller
+      96: 13   # AKEYCODE_BUTTON_A: B
+      100: 14  # AKEYCODE_BUTTON_Y: X
+      99: 15   # AKEYCODE_BUTTON_X: Y
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+      23: 23   # AMOTION_EVENT_AXIS_BRAKE: LeftTrigger
+      22: 24   # AMOTION_EVENT_AXIS_GAS: RightTrigger
+
+  # EightBitDoxCloudProductIdMap
+  - controllers:
+    - vendorId: 0x2DC8   # EightBitDo
+      productId: 0x2100  # EightBitDo xCloud
+    buttonMappings:
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      104: 23  # AKEYCODE_BUTTON_L2: Back    NOTE: Yes, this is correct. The cheese slices reports as L2
+      110: 10  # AKEYCODE_BUTTON_MODE: Guide
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
+      12: 23   # AMOTION_EVENT_AXIS_RX: LeftTrigger
+      13: 24   # AMOTION_EVENT_AXIS_RY: RightTrigger
+
+
+  # GameviceProductIdMap
+  - controllers:
+      - vendorId: 0x27F8   # Gamevice
+        productId: 0x0BBC  # GameviceGamepad
+    buttonMappings:
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      4: 5     # AKEYCODE_BACK: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      102: 8   # AKEYCODE_BUTTON_L1: LeftShoulder
+      103: 9   # AKEYCODE_BUTTON_R1: RightShoulder
+      3: 10    # AKEYCODE_HOME: Guide
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+      104: 23  # AKEYCODE_BUTTON_L2: LeftTrigger    NOTE: Both analog and digital values are sent by this device but the analog values are flaky
+      105: 24  # AKEYCODE_BUTTON_R2: RightTrigger
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+
+  # V50ThinqSoftGamepadMap
+  - controllers:
+      - vendorId: 0x1004   # V50Thinq
+        productId: 0x6401  # V50Thinq
+    buttonMappings:
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight    NOTE: outermost L/R buttons used for bumpers
+      104: 8   # AKEYCODE_BUTTON_L2: LeftShoulder
+      105: 9   # AKEYCODE_BUTTON_R2: RightShoulder    NOTE: use the middle L/R buttons for triggers - they map to controls available in the built-in driving layout
+      102: 23  # AKEYCODE_BUTTON_L1: LeftTrigger
+      103: 24  # AKEYCODE_BUTTON_R1: RightTrigger
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      13: 20   # AMOTION_EVENT_AXIS_RY: RightStickY
+
+  # BeboncoolGamepadMap
+  - controllers:
+      - vendorId: 0x1949   # Beboncool
+        productId: 0x0402  # Beboncool
+    buttonMappings:
+      96: 12   # AKEYCODE_BUTTON_A: A
+      97: 13   # AKEYCODE_BUTTON_B: B
+      99: 14   # AKEYCODE_BUTTON_X: X
+      100: 15  # AKEYCODE_BUTTON_Y: Y
+      108: 4   # AKEYCODE_BUTTON_START: Start
+      109: 5   # AKEYCODE_BUTTON_SELECT: Back
+      106: 6   # AKEYCODE_BUTTON_THUMBL: LeftStickButton
+      107: 7   # AKEYCODE_BUTTON_THUMBR: RightStickButton
+      104: 8   # AKEYCODE_BUTTON_L2: LeftShoulder
+      105: 9   # AKEYCODE_BUTTON_R2: RightShoulder
+      102: 23  # AKEYCODE_BUTTON_L1: LeftTrigger
+      103: 24  # AKEYCODE_BUTTON_R1: RightTrigger
+      19: 0    # AKEYCODE_DPAD_UP: DirectionalPadUp
+      20: 1    # AKEYCODE_DPAD_DOWN: DirectionalPadDown
+      21: 2    # AKEYCODE_DPAD_LEFT: DirectionalPadLeft
+      22: 3    # AKEYCODE_DPAD_RIGHT: DirectionalPadRight
+    analogMappings:
+      0: 17    # AMOTION_EVENT_AXIS_X: LeftStickX
+      1: 18    # AMOTION_EVENT_AXIS_Y: LeftStickY
+      11: 19   # AMOTION_EVENT_AXIS_Z: RightStickX
+      14: 20   # AMOTION_EVENT_AXIS_RZ: RightStickY
+      15: 21   # AMOTION_EVENT_AXIS_HAT_X: DirectionalPadX
+      16: 22   # AMOTION_EVENT_AXIS_HAT_Y: DirectionalPadY
